@@ -4,7 +4,7 @@
 }
 
 
-/* Header style Start */
+/* Header Section Start  */
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -45,8 +45,9 @@ nav li a{
     color: #454545;
 }
 
-/* Header style End */
+/* Header Section End  */
 
+/* Banner Section Start */
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -77,14 +78,78 @@ header img{
     margin-top: 50px;
     width: 100%;
 }
+/* Banner Section End */
 
+/* This is Quick list Section Start */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-section{
+    display: flex;
+    align-items: center;
+}
+
+.image-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    
+}
+
+.title-description{
+    padding-left: 70px;
+    padding-left: 70px;
+}
+
+.quick-list{
+    color: #727272;
+    font-size: 45px;
+    font-size: 'Work Sans';
+    font-weight: 500;
+}
+
+.of-our{
+    color:  #131313;
+    font-size: 45px;
+    font-family: 'Work Sans';
+    font-weight: 700;
+} 
+
+.features{
+    color: #FF900E;
+    font-size: 45px;
+    font-family: 'Work Sans';
+    font-weight: 700;
+}
+
+.description{
+    color: #727272;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: 400;
+}
+
+/* This is Quick list Section End */
+
+
+/* This is media queries Start in Header Section */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
 
-    nav{
+    nav,
+    .main-section{
         flex-direction: column;
+    }
+    .image-section{
+        grid-template-columns: 1fr;
+    }
+    .title-description{
+        padding-left: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -93,7 +158,8 @@ header img{
         padding: 50px;
     }
 
-    nav{
+    nav, .main-section{
         flex-direction: column;
     }
 }
+/* This is media queries in Header Section End */
